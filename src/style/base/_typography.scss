@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+@font-face {
+    font-family: "Troye Free Serif";   /*Can be any text*/
+    src: local("TroyeFreeSerif"),
+      url("../../fonts/Troye\ Serif\ Free.woff") format("woff");
+  }
+
+//   font-family: 'Montserrat', sans-serif;
+
+h1{
+font: normal normal normal 40px/33px 'Troye Free Serif';
+letter-spacing: 0px;
+color: $primary-color;
+text-transform: capitalize;
+}
+
+.p{
+  text-align: left;
+  font: normal normal medium 18px/26px Montserrat;
+  letter-spacing: 0px;
+  color: $font-gray-color;
+}
+
