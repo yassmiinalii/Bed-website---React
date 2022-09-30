@@ -1,0 +1,85 @@
+.navBar {
+  font-size: 1.2rem;
+
+  .menuItem {
+    font-size: 1.2rem !important;
+    letter-spacing: 0px;
+    color: $secondary-light-dark-color !important;
+    text-transform: capitalize;
+    &:hover {
+      color: $primary-color !important;
+    }
+  }
+  .nav-link.active {
+    border-bottom: 6px solid $primary-color !important;
+  }
+
+  .searchContainer {
+    position: relative;
+    font-size: 1rem;
+    .nav-search {
+        background: #b7b7b712;
+        font-weight: 300;
+        border: 0.5px solid #b7b7b74a;
+        padding-left: 32px;
+        color: $font-gray-color;
+        border-radius: 24px;
+        min-width: 292px;
+        height: 45px;
+      }
+      .search-icon {
+        font-weight: 400;
+        font-size: 18px;
+        color: #b7b7b7;
+        position: absolute;
+        left: 10px;
+        top: 34%;
+      }
+  }
+
+  .nav-social-icons {
+    & .nav-link {
+      color: $navSocialColor !important;
+      font-size: 18px;
+      &:hover {
+        color: $secondary-light-dark-color !important;
+      }
+    }
+   }  
+ 
+  .btn-my-account {
+    a {
+        font-size: 1.2rem;
+      color: $white;
+      &:visited,
+      &:active {
+        color: $white;
+      }
+    }
+    &:hover {
+        background-color: $secondary-light-dark-color;
+      }
+    .dropdownItem {
+      color: $font-gray-color !important;
+    }
+  }
+
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    align-items: flex-end !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .nav-image{
+    max-width: 100px;
+  }
+}
