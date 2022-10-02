@@ -1,0 +1,39 @@
+.offer-container{
+
+    .our-offer{
+        text-align: center !important;
+    }
+    .offer-img-container {
+        width: 100%;
+        // display: inline-block;
+        // background: #14325c94;
+        align-items: center;
+        align-content: center;
+        height: 500px;
+    }
+    
+    .offer-img {
+        position: relative;
+        z-index: -1;
+        background-position: center;
+        background-size: cover;
+        height: 500px;
+    }
+    
+    .offer-title {
+        font: normal normal bold 30px/64px Montserrat;
+        color: white;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    
+    .offer-description{
+        padding: 1rem;
+        max-width: 766px;
+        text-align: center;
+        color: white;
+    }
+    .btn-offer{
+        color: white;
+    }
+}
