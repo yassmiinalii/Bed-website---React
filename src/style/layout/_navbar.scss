@@ -2,7 +2,7 @@
   font-size: 1.2rem;
 
   .menuItem {
-    font-size: 1.2rem !important;
+    font-size: 1.1rem !important;
     letter-spacing: 0px;
     color: $secondary-light-dark-color !important;
     text-transform: capitalize;
@@ -40,7 +40,7 @@
   .nav-social-icons {
     & .nav-link {
       color: $navSocialColor !important;
-      font-size: 18px;
+      font-size: 1rem;
       &:hover {
         color: $secondary-light-dark-color !important;
       }
@@ -49,7 +49,7 @@
  
   .btn-my-account {
     a {
-        font-size: 1.2rem;
+        font-size: 1rem;
       color: $white;
       &:visited,
       &:active {
