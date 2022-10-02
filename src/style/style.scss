@@ -4,6 +4,7 @@
 
 // vendors
 @import './vendors/theme';
+// @import './vendors/libraries'
 
 // base
 @import './base/reset';
@@ -14,5 +15,9 @@
 @import './layout/footer';
 
 // components
+@import './components/banner';
+@import './components/president';
+@import './components//missionVision';
 
 // pages
+@import './pages/home';
