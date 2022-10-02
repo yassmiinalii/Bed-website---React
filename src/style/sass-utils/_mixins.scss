@@ -4,3 +4,11 @@
   letter-spacing: 0px;
   color: $color;
 }
+
+@mixin text-style( $fontSize:20px, $color, $font-family:  Montserrat, $text-transform: capitalize, $text-decoration:none,$textAlign: left,$font-weight: medium,){
+  text-align: $textAlign;
+  font: normal normal $font-weight $fontSize $font-family;
+  color: $color;
+  text-transform: $text-transform;
+  text-decoration: $text-decoration;
+}
