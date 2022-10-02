@@ -1,0 +1,51 @@
+.missionVision-container {
+
+    .content-container{
+        gap: 5rem
+    }
+    .missionVision-title {
+        @extend h1;
+        font-size: 60px;
+        color: $secondary-color;
+        opacity: 0.2;
+        z-index: -1;
+    }
+
+    .img-container{
+        height: 370px;
+        background-position: bottom;
+        background-size: cover;
+        box-shadow: -20px 22px 0px -6px #FEEFE8;
+        margin-left: 1rem;
+    }
+  
+    .missionVision-icon-container {
+        animation: missionIcon 2s ease 1s infinite normal forwards;
+    }
+    @keyframes missionIcon {
+        0% {
+            transform: scale(1);
+        }
+    
+        50% {
+            transform: scale(1.1);
+        }
+    
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .mission-vision-content{
+        margin-left: 2rem;
+    }
+    .missionVision-description-container{
+        width: 590px;
+    }
+    .missionVision-description{
+        color: $font-black-color;
+    }
+    .icon-text-container{
+        margin-top: -2rem;
+    }
+}
