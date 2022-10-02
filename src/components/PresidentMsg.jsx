@@ -17,7 +17,7 @@ const PresidentMsg = () => {
     if (isLoading) return <PresidentSkelton />
     if (error) return "An error has occurred: " + error.message;
     return (
-        <Container fluid className='president-container component-container '>
+        <Container  className='president-container component-container '>
             <h1 className="section-title-container">
                 Message From The President & Vice President
             </h1>

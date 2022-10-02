@@ -23,7 +23,7 @@ const MissionVision = () => {
   if (error) return "An error has occurred: " + error.message;
 
   return (
-    <Container fluid className="missionVision-container component-container ">
+    <Container   className="missionVision-container component-container ">
       <h1 className="section-title-container">
         Mission & Vision
       </h1>

@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from '../components/Banner';
 import Mattresses from '../components/Mattresses';
 import MissionVision from '../components/MissionVision';
+import Offers from '../components/Offers';
 import PresidentMsg from '../components/PresidentMsg'
 import VicePresidentMsg from '../components/VicePresidentMsg';
 
@@ -10,12 +11,11 @@ const Home = () => {
         <>
 
         <Banner/>
-        <div className='mx-5'>
-        {/* <Mattresses/>     */}
+        <Mattresses/>    
         <PresidentMsg/>
         <VicePresidentMsg/>
         <MissionVision/>
-        </div>
+        <Offers/>
         </>
     );
 };

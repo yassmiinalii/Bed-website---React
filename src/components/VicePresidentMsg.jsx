@@ -18,7 +18,7 @@ const VicePresidentMsg = () => {
     if (isLoading) return <PresidentSkelton imgDirection='flex-row-reverse'  />
     if (error) return "An error has occurred: " + error.message;
     return (
-        <Container fluid className='president-container component-container'>
+        <Container className='president-container component-container'>
             <Row className='gap-0 align-items-center flex-row-reverse'>
             <Col md={4} lg={4} xs={12}>
                     <div className="president-image-container">
