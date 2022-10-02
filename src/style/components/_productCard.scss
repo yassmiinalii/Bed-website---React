@@ -1,0 +1,37 @@
+.card-container {
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 0;
+  .card-title {
+    font: normal normal 600 22px/33px Montserrat;
+    color: $secondary-color;
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.5px solid #707070;
+  }
+  .card-body {
+    padding: var(--bs-card-spacer-y) 0px;
+  }
+  .card-body-bottom {
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-y);
+  }
+  .product-name {
+    @include text-style(20px,$secondary-color);
+  }
+  .old-price {
+    @include text-style(18px,$secondary-light-color,medium,capitalize,line-through );
+  }
+  .current-price{
+    @include text-style(20px,$primary-color);
+  }
+  .card-text{
+    font-weight: normal;
+  }
+  .details-btn, .cart-btn{
+    padding-left: 24px;
+    padding-right: 24px;
+    &:hover{
+        color: white;
+    }
+  }
+}
