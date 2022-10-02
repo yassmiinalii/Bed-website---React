@@ -58,8 +58,8 @@ const NavBar = () => {
 
                     <Nav className="me-auto" >
                         {pages.map((page) => (
-                            <LinkContainer to={page.path}>
-                                <Nav.Link className='menuItem' key={page.name}>
+                            <LinkContainer to={page.path} key={page.name}>
+                                <Nav.Link className='menuItem' >
                                     {page.name}
                                 </Nav.Link>
                             </LinkContainer>
@@ -81,13 +81,13 @@ const NavBar = () => {
                                 </Nav>
                             </div>
                         </Stack>
-                        <Stack direction="horizontal" >
+                        <Stack direction="horizontal" className='justify-content-end' >
                             <Nav>
-                                <NavDropdown title={<span> <FaUser />  My Account </span>}
-                                    className='btn btn-secondary btn-my-account mt-3 me-3' id="basic-nav-dropdown">
+                                <NavDropdown  title={<span> <FaUser />  My Account </span>}
+                                    className='btn btn-secondary btn-my-account mt-3 me-3 p-0 px-2' id="basic-nav-dropdown">
                                     <NavDropdown.Item href="/" className='dropdownItem' >Action</NavDropdown.Item>
                                 </NavDropdown>
-                                <div className='btn btn-secondary btn-my-account mt-3 ' >
+                                <div className='btn btn-secondary btn-my-account mt-3  p-0 px-2' >
                                     <Nav.Link   >
                                         <MdShoppingBasket /> ({cartItems})  Items
                                     </Nav.Link>
