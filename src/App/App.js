@@ -1,9 +1,10 @@
-import { Provider } from "react-redux";
 import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
-// import store from "../redux/store";
+import { store } from '../redux/store'
+import { Provider } from 'react-redux'
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from '../components/NavBar';
+
 import './App.scss';
 
 const queryClient = new QueryClient()
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <>
+      <Provider store={store}>
       <QueryClientProvider client={queryClient}>
         <Suspense fallback={<div>loooading</div>}>
           <BrowserRouter>
@@ -23,6 +25,7 @@ function App() {
           </BrowserRouter>
         </Suspense>
       </QueryClientProvider>
+      </Provider>
     </>
   )
 }
