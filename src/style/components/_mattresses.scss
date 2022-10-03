@@ -1,14 +1,25 @@
 .mattresses-container {
-    .productTypes-container {
-        background-color: $primary-color;
+
+    .nav-pills .nav-link{
+        font: normal normal normal 22px/27px Troye Free Serif;
+        text-shadow: 0px 3px 6px #00000029;  
+        background-color: $secondary-color;
+        border-left: 1px solid $secondary-light-color;
+        border-radius: 0;
         height: 91px;
         color: white;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            background-color: $secondary-light-color ;
+        }
     }
-
-    .productType-title {
-        font: normal normal normal 22px/27px Troye Free Serif;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        text-shadow: 0px 3px 6px #00000029;
+    .nav-pills .nav-link.active{
+        background-color: $primary-color;
+        &:hover{
+            background-color: $primary-dark-color ;
+        }
     }
 }
