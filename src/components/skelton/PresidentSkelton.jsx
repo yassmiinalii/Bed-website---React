@@ -4,7 +4,7 @@ import {Col, Container, Row, Stack} from 'react-bootstrap'
 const PresidentSkelton = (props) => {
     const {imgDirection, textDirection} = props;
     return (
-        <Container fluid className='component-container'> 
+        <Container className='component-container'> 
         <Row className={`align-items-center ${imgDirection}  `}>
             <Col xs={12} md={4} className=" justify-content-center align-items-center">
           <Skeleton width={'95%'} height={510} borderRadius={50} highlightColor="#FDFDFD" baseColor="#F8F9FA"/>
