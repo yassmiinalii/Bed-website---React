@@ -1,16 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Form, Nav, Navbar, Container, Button, NavDropdown, Row, Stack } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image'
 import { LinkContainer } from 'react-router-bootstrap'
 
-import logo from '../assets/images/logo.png';
+import logo from '../../assets/images/logo.png';
 import { FaFacebookF } from 'react-icons/fa';
 import { FaUser } from 'react-icons/fa';
 import { AiFillInstagram } from 'react-icons/ai';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { MdShoppingBasket } from 'react-icons/md';
 import { BiSearch } from 'react-icons/bi';
-
+import { useSelector} from 'react-redux'
 // import accountIcon from '../assets/icons/account.png'
 // import cartIcon from '../assets/icons/cart.png'
 
@@ -44,7 +44,15 @@ const pages = [
 
 
 const NavBar = () => {
-    const cartItems = 0;
+    // const cartItems = 0;
+    const cartItems = useSelector((state) => state.cartCounter.value)
+    // const [cartItems,setCartIconItems] = useState(0)
+    // useEffect(()=>{
+    //     const cart= JSON.parse(localStorage.getItem("cart"));
+    //     console.log(cart.length);
+    //     setCartIconItems(cart.length)
+    // },[])
+
     return (
         <Navbar bg="light" expand="lg" className='navBar my-3'>
             <Container fluid className='mx-5' >
