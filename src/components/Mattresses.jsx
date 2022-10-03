@@ -55,7 +55,7 @@ const Mattresses = () => {
                             <Row >
                                 <Nav variant="pills" activeKey={activeKey} onSelect={handleSelectProductType}>
                                     {productTypes.map((type) => (
-                                        <Col key={type.id}>
+                                        <Col sx={2}  className="mb-1" key={type.id}>
                                             <Nav.Item data-aos="fade-in">
                                                 <Nav.Link eventKey={type.id}>
                                                     {type.header_title_english}
@@ -68,7 +68,7 @@ const Mattresses = () => {
                             {
                                selectedTypeProducts?  (<Row className='mt-5'>
                                {_DATA?.currentData().map((product) => (
-                                   <Col data-aos="fade-in" xs={12} md={4} key={product.id}  >
+                                   <Col data-aos="fade-in" xs={12} md={4}  key={product.id}  className='mb-5'  >
                                        <ProductCard
                                            type="MattressesLines"
                                            name={selectedCategory.header_title_english}
