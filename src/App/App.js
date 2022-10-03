@@ -15,6 +15,12 @@ function App() {
   const Home = lazy(() => import("../pages/Home"));
   const NotFound = lazy(() => import("../pages/NotFound"));
 
+  const [open, setOpen] = React.useState(false);
+
+  
+  const handleToggle = () => {
+    setOpen(!open);
+  };
 
   return (
     <>
